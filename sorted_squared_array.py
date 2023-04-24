@@ -14,7 +14,7 @@ def sol(arr):
 
 # solve 2 : 2 pointer for time efficience 
 def sol( arr):
-    n_ar=[ 0 for _ in arr] # new jinis sikhlam 
+    n_ar=[ 0 for _ in arr] 
     low, hi= 0,len(arr)-1
     i=hi
     while ( low <= hi):
