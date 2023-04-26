@@ -13,3 +13,5 @@ def sol(arr):
             i+=1
         
     return cost+1
+
+#a=[5,7,1,1,2,3,22] ans =20 !
