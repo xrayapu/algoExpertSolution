@@ -35,6 +35,6 @@ def sol(n):
 
     return arr[1] if n > 1 else arr[0] # eade case n=1
 
-print(sol(10))
+print(sol(110))
 
 # [0,1]
