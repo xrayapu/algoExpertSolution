@@ -17,3 +17,5 @@ def sol(arr, tar):
 
     return -1
 ```
+
+#  time O(logn) and space O(1)
