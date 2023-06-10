@@ -1,5 +1,8 @@
 # type 1 : time : O(n^2)|space O(n) 
 
+## use string concatination 
+
+```python 
 
 def sol(arr):
     st =''
@@ -7,8 +10,11 @@ def sol(arr):
         st = i + st # time O(n) per opartion 
 
     return st == arr
+```
 
 # type 2: time : O(n)| space O(n)
+## use list only 
+``` python
 def sol (arr):
     nre=[]
     for i in reversed(range(len(arr))):
@@ -16,8 +22,9 @@ def sol (arr):
         nre.append(arr[i])   
         #print(nre, i) 
     return ''.join(nre) == arr
-
+```
 # type 3 : 2 pointer 
+``` python
 def sol(arr):
     left =0
     right = len(arr)-1
@@ -29,10 +36,8 @@ def sol(arr):
 
     return True
 
-  
+  ```
  # time O(n) | space O(1)
     
 
-a='noon'
 
-print(sol(a)) 
