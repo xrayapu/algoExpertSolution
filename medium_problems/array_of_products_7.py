@@ -18,7 +18,7 @@ def sol(arr):
 # type 2 : time O(n^2) | space O(n)
 
 
-def sol(arr):
+def sol1(arr):
     p = []
     for i in range(len(arr)):
         ans = 1
