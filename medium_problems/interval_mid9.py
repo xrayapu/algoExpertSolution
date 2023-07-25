@@ -20,5 +20,5 @@ def sol(arr):
     return ans
 
 
-# print(sol([[1, 3], [2, 6], [8, 10], [15, 18]]))
+# print(sol([[1, 3], [2, 6], [8, 10], [15, 18]])) => [[1,6],[8,10],[15,18]]
 #time O(nlogn) and space O(n)
