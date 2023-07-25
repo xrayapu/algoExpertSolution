@@ -31,3 +31,17 @@ def sol(arr):
 
         m[i] = num
 #time O(n) | space O(n)
+
+# type 4:
+
+def sol(arr):
+    for i in arr:
+        cval = abs(i)
+        if arr[cval - 1] < 0:
+            return cval
+        arr[cval - 1] *= -1
+
+    return -1
+
+# time O(n) | space O(1)
+
