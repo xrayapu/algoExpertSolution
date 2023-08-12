@@ -15,10 +15,10 @@ def sol(root, tar, closeval):
         closeval = root.val
 
     elif root.val > tar:
-        root.left = sol(root.left, tar, closeval)
+        return sol(root.left, tar, closeval)
 
     elif root.val < tar:
-        root.right = sol(root.right, tar, closeval)
+        return sol(root.right, tar, closeval)
     else:
         return closeval
 
