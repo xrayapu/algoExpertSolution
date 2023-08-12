@@ -14,7 +14,7 @@ def sol(root, tar, closeval):
     if abs(tar - closeval) > abs(tar - root.val):
         closeval = root.val
 
-    elif root.val > tar:
+    if root.val > tar:
         return sol(root.left, tar, closeval)
 
     elif root.val < tar:
