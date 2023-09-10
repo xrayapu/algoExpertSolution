@@ -18,7 +18,7 @@ def sol(arr):
 def sol(arr):
     i = 0
     j = len(arr) - 1
-    ans = [0 for _ in arr]
+    ans = [0 for _ in arr] # created same array of length of the arr, but it is filled with 0.
     # print(len(ans))
     for idx in reversed(range(len(arr))):
         small = arr[i]
