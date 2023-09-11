@@ -10,6 +10,7 @@ def sol(arr):
 # time O(nlogn) | space O(n)
   
 # print(sol([-3, 1, 5]))
+#output: [1,9,25]
 
 
 
@@ -33,4 +34,6 @@ def sol(arr):
     return ans
 
 # time O(n) | space O(n)
-print(sol([-7, -3, 1, 5]))
+# print(sol([-7, -3, 1, 5]))
+# output : [1,9,25,49]
+
