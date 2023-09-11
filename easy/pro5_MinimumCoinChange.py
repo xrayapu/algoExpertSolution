@@ -1,5 +1,5 @@
 # you are given some coin , return the minimum coin that can't created by all of this coins ! 
-
+#time O(nlogn) | space O(1)
 def sol(arr):
     arr.sort()
     make = 0
