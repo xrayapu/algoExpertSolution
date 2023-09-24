@@ -8,7 +8,7 @@ class node:
 
 
 def inorder(node):
-    if node is not None:
+    if node is not None: # if not node:
         inorder(node.left)
         print(node.data, end=" ")
         inorder(node.right)
