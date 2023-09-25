@@ -68,8 +68,8 @@ def delete(root, val):
             return temp
         else:
             temp = minval(root.right)
-            root.data = temp.data
-            delete(root.data, temp.data)
+            root.data = temp.data # root.data = temp
+            delete(root.right, temp.data) # root.right = delete(root.right, temp)
 
     return root
 
