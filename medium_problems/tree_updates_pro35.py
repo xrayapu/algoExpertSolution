@@ -11,7 +11,7 @@ class node:
 
 
 def minval(node):
-    while node.left is not None:
+    while node.left is not None: # while not node.left(same)
         return node.left
 
 
