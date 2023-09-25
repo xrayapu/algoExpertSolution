@@ -16,7 +16,7 @@ def minval(node):
 
 
 def inorder(root):
-    if root is not None:
+    if root is not None: # if not root
         inorder(root.left)
         print(root.data, end=" ")
         inorder(root.right)
@@ -58,11 +58,11 @@ def delete(root, val):
         root.right = delete(root.right, val)
 
     else:
-        if root.left is None:
+        if root.left is None: # if not root.left
             temp = root.right
             root = None
             return temp
-        elif root.right is None:
+        elif root.right is None: # if not root.right
             temp = root.left
             root = None
             return temp
