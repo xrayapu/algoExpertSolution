@@ -1,5 +1,6 @@
 # bst insert, search, delete
 
+# tried to learn from programiz
 
 # i got it at last , faceing some staggle but atlast at search i can see the subtree of searched value! 
 class node:
