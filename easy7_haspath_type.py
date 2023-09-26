@@ -12,7 +12,7 @@ def cal(node, csum, ans):
     if not node:
         return
     csum = node.val + csum
-    if node.left is None and node.right is None:
+    if node.left is None and node.right is None: # if not node.left and not node.right :
         ans.append(csum)
         return
 
