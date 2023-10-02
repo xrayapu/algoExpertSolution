@@ -41,7 +41,7 @@ def sol(ar1,ar2):
     check = 'red' if ar1[0] > ar2[0] else 'blue'
     if len(ar2) != len(ar1): return False
     else:
-        i=1
+        i=0
         while(i < len(ar2)) :
             if check == 'red':
                 if ar1[i] <= ar2[i]:
@@ -54,3 +54,35 @@ def sol(ar1,ar2):
             i+=1
 
     return True
+
+# type 3 : >><< without modifing the array
+
+def sol(arr1, arr2):
+    l = len(arr1)
+    i, j = 1, 1
+    if arr1[0] > arr2[0]:
+        while i < l and j < l:
+            if arr1[i] > arr2[j]:
+                i += 1
+                j += 1
+            else:
+                return False
+
+    elif arr1[0] < arr2[0]:
+        while i < l and j < l:
+            if arr1[i] < arr2[j]:
+                i += 1
+                j += 1
+            else:
+                return False
+
+    else:
+        return False
+
+    return i == j
+
+
+a = [5, 8, 1, 3, 4]
+b = [6, 9, 2, 4, 5]
+print(sol(a, b))
+
