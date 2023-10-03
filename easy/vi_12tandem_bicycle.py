@@ -52,6 +52,21 @@ def sol(red, blue, type):
 
 # time: O(nlogn) | space: O(1)
 
+def maxspeed(arr1, arr2, speed):
+    total = 0
+    arr1.sort()
+    if speed:
+        arr2.sort(reverse=True)
+    else:
+        arr2.sort()
+    for idx in range(len(arr2)):
+        
+        temp = max(arr1[idx], arr2[idx])
+        total += temp
+        
+
+    return total
+# time: O(nlogn) | space: O(1)
 
     
 
