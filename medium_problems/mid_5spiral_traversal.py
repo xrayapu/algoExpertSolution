@@ -3,7 +3,7 @@ def sol(arr):
       m, n = len(arr[0]), len(arr)
       t, l = 0, 0
       r, b = len(arr[0]), len(arr)
-      while l <= r and t <= b:
+      while l <r and t < b:
           # top
           for i in range(l, r):
               ans.append(arr[t][i])
@@ -23,6 +23,6 @@ def sol(arr):
       return ans[: m * n]
 
 
-# time O(m*n) | space O(m*n)
+# time O(n) | space O(n)
 
 #also as leetcode solution
