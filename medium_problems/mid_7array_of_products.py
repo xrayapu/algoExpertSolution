@@ -1,7 +1,7 @@
 # array of products [5,1,4,2]=>[8,40,10,20]
 
 
-# using division
+# using division 
 # type 1: time O(n) | space O(1)
 
 def sol(arr):
