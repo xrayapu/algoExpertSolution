@@ -1,6 +1,6 @@
-# does it satisfy bst properties.
+# does it satisfy bst properties? 
 
-# time O(n) | space O(d)
+# time O(n) , n is all the node| space O(d),d is the length of the tree 
 #leetcode type ! 
 def bst_tree(node):
     return bst(node, float('-inf'), float('inf'))
