@@ -17,3 +17,4 @@ def it(node, t):
     tree_trvrsal(node)
     
     return ans[-t ]
+    
