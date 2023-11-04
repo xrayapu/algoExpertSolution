@@ -15,8 +15,12 @@ def sol(tree, tar):
 
     inO(tree)
 
-    idx = ans.index(tar)
-    # print(ans, idx, len(ans))
+    if tar in ans:
+        idx = ans.index(tar)
+    else:
+        return None
+        
+    
     if idx == len(ans) - 1:
         return None
     else:
