@@ -16,4 +16,18 @@ def sol(arr, tar):
 
 # print(sol([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 12]))
 
-# time O(n) | space O(1)
+# time O(n) | space O(n)
+
+# type 2:
+
+def soly(arr, tar):
+    i=j=0
+    while i< len(arr) and j< len(tar):
+        if arr[i] == tar[j]:
+            i+=1
+            j+=1
+        else:
+            i+=1
+    return j == len(tar)
+
+#time O(n) | space O(1)
